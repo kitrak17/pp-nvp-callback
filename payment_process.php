@@ -6,23 +6,16 @@ require('PaypalPro.class.php');
 	
 	//Payment details
     $paypalParams = array(
-        'paymentAction' => 'Sale',
-		'itemName' => 'Apple ipod',
-		'itemNumber' => 'S0001',
-        'amt' => '4.50',
-        'taxamt' => '0.50',
-		'itemamt' => '4.00',
-        'currencyCode' => 'AUD',
-        'creditCardType' => 'Visa',
-        'creditCardNumber' => '4716123113346438',
-        'expMonth' => '12',
-        'expYear' => '2034',
-        'cvv' => '123',
-        'firstName' => 'Kartik',
-        'lastName' => 'Kitrak',
-        'city' => 'Chennai',
-        'zip'	=> '600001',
-        'countryCode' => 'IN'
+        'METHOD' => 'CallbackResponse',
+	'CURRENCYCODE' => 'USD',
+        'OFFERINSURANCEOPTION' => 'TRUE',
+        'L_SHIPPINGOPTIONISDEFAULT0' => 'true',
+        'L_SHIPPINGOPTIONNAME0' => 'Flat'
+        'L_SHIPPINGOPTIONLABEL0' => 'Flat'
+        'L_SHIPPINGOPTIONAMOUNT0' = '0.00'
+	'OFFERINSURANCEOPTION' => 'true',
+        'NO_SHIPPING_OPTION_DETAILS' => '1'
+
     );
 	
 	echo "<hr />";
